@@ -1,6 +1,9 @@
 # Library Application
 This project is an online library application developed with Spring Boot, Angular, and PostgreSQL. It provides a book management system, user management, and loan tracking, with authentication and authorization features to ensure security.
 
+<img width="1440" alt="Screenshot 2024-01-24 at 11 11 33 AM" src="https://github.com/diazms04/libraryAPP/assets/92173560/a582085a-6439-4b30-b054-5797a4d956b7">
+
+
 ## Technologies Used
 
 - **Spring Boot:** Backend of the application, providing business logic and the REST API.
