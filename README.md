@@ -1,27 +1,44 @@
-# Appbiblioteca
+# Library Application
+This project is an online library application developed with Spring Boot, Angular, and PostgreSQL. It provides a book management system, user management, and loan tracking, with authentication and authorization features to ensure security.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+## Technologies Used
 
-## Development server
+- **Spring Boot:** Backend of the application, providing business logic and the REST API.
+- **Angular:** Frontend of the application, offering an interactive user interface.
+- **PostgreSQL:** Relational database used to store information about books, users, and loans.
+- **Login Authentication:** Implemented to ensure the security of the application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Key Features
 
-## Code scaffolding
+1. **Book Management:** Allows adding, editing, deleting, and searching for books in the library.
+2. **User Management:** Manages information about users, including personal details and roles.
+3. **Loans:** Facilitates the process of borrowing and returning books.
+4. **Authentication and Authorization:** Only authenticated users can access certain functions, with specific roles for administrators and regular users.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Setup
 
-## Build
+### Backend (Spring Boot)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository: `git clone https://github.com/yourusername/online-library.git`
+2. Navigate to the backend directory: `cd online-library-backend`
+3. Configure the PostgreSQL database in `src/main/resources/application.properties`.
+4. Run the Spring Boot application: `./mvnw spring-boot:run`
 
-## Running unit tests
+### Frontend (Angular)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Navigate to the frontend directory: `cd online-library-frontend`
+2. Install dependencies: `npm install`
+3. Configure the backend URL in `src/environments/environment.ts`.
+4. Start the Angular application: `ng serve`
 
-## Running end-to-end tests
+## Accessing the Application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Once the backend and frontend are running, the application will be available at `http://localhost:4200`. You can log in with the default credentials:
 
-## Further help
+- **Admin User:**
+  - Username: admin
+  - Password: admin123
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Regular User:**
+  - Username: user
+  - Password: user123
